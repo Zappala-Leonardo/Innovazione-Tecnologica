@@ -15,12 +15,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: fade-in 1s ease;
 }
+.image-container {
+    border-radius: 10px; /* Rende i bordi arrotondati */
+    overflow: hidden; /* Assicura che l'immagine non esca dai bordi arrotondati */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra per un effetto visivo migliore */
+}
 
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%; /* Larghezza massima su schermi più piccoli */
-        padding: 0 10px; /* Riduci il padding sui lati */
-    }
+.image-container img {
+    display: block;
+    width: 100%; /* Imposta l'immagine a larghezza massima nel contenitore */
+    height: auto; /* Altezza automatica proporzionale alla larghezza */
 }
 
 header, footer {
